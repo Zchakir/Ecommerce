@@ -1,9 +1,21 @@
 package org.mql.store.business;
 
-public class StoreServiceDefault {
+import java.util.List;
 
-	public StoreServiceDefault() {
-		// TODO Auto-generated constructor stub
+import org.mql.store.dao.ProductDao;
+import org.mql.store.models.Product;
+
+public class StoreServiceDefault  implements StoreService{
+
+	private ProductDao productdao;
+	
+	public StoreServiceDefault(ProductDao productdao) {
+		this.productdao = productdao;
+	}
+
+	
+	public List<Product> getProducts() {
+		return null;
 	}
 
 }
