@@ -15,7 +15,7 @@ public class StoreServiceDefault  implements StoreService{
 
 	
 	public List<Product> getProducts() {
-		return null;
+		return productdao.selectAll();
 	}
 
 }

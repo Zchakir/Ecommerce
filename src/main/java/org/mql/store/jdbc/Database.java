@@ -19,7 +19,6 @@ public class Database {
 	}
 	
 	
-	
 	public DataSource getDataSource() {
 		return dataSource;
 	}
