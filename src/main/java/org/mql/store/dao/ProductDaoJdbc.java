@@ -10,7 +10,7 @@ import org.mql.store.models.Product;
 public class ProductDaoJdbc implements ProductDao{
 
 	private Database db;
-	private String tablename = "Product";
+	private String tablename = "product";
 	
 	public ProductDaoJdbc(Database db) {
 		this.db = db;
@@ -20,7 +20,10 @@ public class ProductDaoJdbc implements ProductDao{
 	public List<Product> selectAll() {
 		String data[][] = db.select(tablename);
 		Vector<Product> products = new Vector<Product>();
-		for (int i = 1; i < data.length; i++) {
+		for (int i = 0; i < data.length; i++) {
+			System.out.println(data[i]);
+		}
+		for (int i = 0; i < data.length; i++) {
 			products.add(StoreMapper.getProduct(data[i]));
 		}
 		return products;

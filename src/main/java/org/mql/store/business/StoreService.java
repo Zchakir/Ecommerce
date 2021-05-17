@@ -7,5 +7,5 @@ import org.mql.store.models.Product;
 public interface StoreService {
 	
 	public List<Product> getProducts();
-   
+    
 }

@@ -88,13 +88,15 @@ public class Database {
 		sb.append(")");
 		try {
 			Statement sql = db.createStatement();
-			System.out.println("Ajouter");
+			//System.out.println("Ajouter");
 			return sql.executeUpdate(sb.toString());
 		} catch (Exception e) {
 			System.out.println("Erreur : " + e.getMessage());
 			return 0;
 		}
 	}
+	
+	
 	
 	
 	
