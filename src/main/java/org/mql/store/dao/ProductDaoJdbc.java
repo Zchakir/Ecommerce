@@ -14,6 +14,7 @@ public class ProductDaoJdbc implements ProductDao{
 	
 	public ProductDaoJdbc(Database db) {
 		this.db = db;
+		
 	}
 
 	

@@ -36,7 +36,7 @@ public class Controller extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		ParametersResolver params = new ParametersResolver(request);
+		//ParametersResolver params = new ParametersResolver(request);
 		int i = request.getRequestURI().lastIndexOf("/") + 1;
 		String action = request.getRequestURI().substring(i);
 		System.out.println(action);

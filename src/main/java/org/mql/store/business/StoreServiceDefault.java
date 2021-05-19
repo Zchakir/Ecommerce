@@ -12,7 +12,7 @@ public class StoreServiceDefault  implements StoreService{
 	public StoreServiceDefault(ProductDao productdao) {
 		this.productdao = productdao;
 	}
-
+   
 	
 	public List<Product> getProducts() {
 		return productdao.selectAll();
