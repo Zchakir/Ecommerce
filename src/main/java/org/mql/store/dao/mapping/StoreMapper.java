@@ -20,6 +20,7 @@ public class StoreMapper {
 			System.out.println("Error" + e.getMessage());
 			return defaultValue;
 		}
+		
 	}
 	
 	public static int getInt(String value) {
