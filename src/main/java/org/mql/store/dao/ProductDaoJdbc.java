@@ -16,7 +16,17 @@ public class ProductDaoJdbc implements ProductDao{
 		this.db = db;
 		
 	}
-	
+	public List<Product> selectProducts(String name){
+		String data[][] = db.select(tablename,"name",name);
+		Vector<Product> products = new Vector<Product>();
+		for (int i = 0; i < data.length; i++) {
+			System.out.println(data[i]);
+		}
+		for (int i = 0; i < data.length; i++) {
+			products.add(StoreMapper.getProduct(data[i]));
+		}
+		return products;
+	} 
 	
 	public List<Product> selectAll() {
 		String data[][] = db.select(tablename);
