@@ -13,7 +13,6 @@ public class StoreMapper {
 		
 	}
 	
-	
 	public static int getInt(String value, int defaultValue) {
 		try {
 			return Integer.parseInt(value);
