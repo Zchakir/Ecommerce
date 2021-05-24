@@ -16,7 +16,7 @@ public class ProductDaoJdbc implements ProductDao{
 		this.db = db;
 		
 	}
-
+	
 	
 	public List<Product> selectAll() {
 		String data[][] = db.select(tablename);
